@@ -1,0 +1,27 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "dirk/xstache",
+    "description": "Isomorphic templates for the web",
+    "license": "BSD-2-Clause",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phan/phan": "^6.0",
+        "php-coveralls/php-coveralls": "^2.1",
+        "phpunit/phpunit": ">=7",
+        "spatie/phpunit-snapshot-assertions": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xstache\\": "src/"
+        }
+    },
+    "config": {
+        "policy": {
+            "cooldown": {
+                "period": "30 days"
+            }
+        }
+    }
+}
